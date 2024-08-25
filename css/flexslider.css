@@ -1,0 +1,134 @@
+/* FlexSlider Necessary Styles */
+.flexslider {
+    margin: 0;
+    padding: 0;
+    position: relative;
+    border-radius: 4px;
+    overflow: hidden;
+}
+
+.flexslider .slides > li {
+    display: none;
+}
+
+.flexslider .slides img {
+    width: 100%;
+    display: block;
+    min-height: 310px;
+}
+
+/* Direction Nav */
+.flex-direction-nav a {
+    width: 34px;
+    height: 48px;
+    margin-top: -24px;
+    display: block;
+    position: absolute;
+    top: 50%;
+    cursor: pointer;
+    text-indent: -9999px;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.flex-direction-nav .flex-next {
+    background-position: 100% 0;
+    right: 0;
+}
+
+.flex-direction-nav .flex-prev {
+    left: 0;
+}
+
+.flexslider:hover .flex-next,
+.flexslider:hover .flex-prev {
+    opacity: 0.8;
+}
+
+/* Control Nav */
+.flex-control-nav {
+    position: absolute;
+    bottom: -40px;
+    text-align: center;
+    right: 0;
+    left: 0;
+}
+
+.flex-control-nav li {
+    display: inline-block;
+    margin: 0 5px;
+}
+
+.flex-control-paging li a {
+    width: 8px;
+    height: 8px;
+    display: inline-block;
+    cursor: pointer;
+    text-indent: -9999px;
+    border-radius: 20px;
+    box-shadow: inset 0 0 3px rgba(0, 0, 0, 0.3);
+    border: none;
+    transition: background 0.3s ease;
+}
+
+.flex-control-paging li a:hover {
+    background: #c36c88;
+}
+
+.flex-control-paging li a.flex-active {
+    background: #CC3636;
+    cursor: default;
+}
+
+/* FlexSlider1 */
+.flexslider1 {
+    margin: 0;
+    padding: 0;
+    position: relative;
+    border-radius: 4px;
+    overflow: hidden;
+}
+
+.flexslider1 ol.flex-control-nav {
+    position: absolute;
+    bottom: -49px;
+    text-align: center;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.flexslider1 .flex-control-paging li a {
+    width: 12px;
+    height: 12px;
+}
+
+/* Media Queries */
+@media screen and (max-width: 1024px) {
+    .flex-control-nav {
+        bottom: -28px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .flex-control-nav {
+        bottom: -6px;
+    }
+}
+
+@media screen and (max-width: 640px) {
+    .flex-control-nav {
+        bottom: 2px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .flex-control-nav {
+        bottom: 1px;
+    }
+}
+
+@media screen and (max-width: 320px) {
+    .flex-control-nav {
+        bottom: 1px;
+    }
+}
